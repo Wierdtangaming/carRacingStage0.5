@@ -7,18 +7,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-
-
     <script>
-      // Your web app's Firebase configuration
-      //Add here
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+  var firebaseConfig = {
+    apiKey: "AIzaSyAq-0CFznqSuoAuAw2B32Q0yu4wWh44ObM",
+    authDomain: "tanmay-c34.firebaseapp.com",
+    databaseURL: "https://tanmay-c34.firebaseio.com",
+    projectId: "tanmay-c34",
+    storageBucket: "tanmay-c34.appspot.com",
+    messagingSenderId: "458830592799",
+    appId: "1:458830592799:web:8d3573ceb119522a13ce2a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
     </script>
-
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
     <script src="js/Game.js"></script>

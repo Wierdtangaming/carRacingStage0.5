@@ -1,11 +1,10 @@
 var canvas, backgroundImage;
-
 var gameState = 0;
-var playerCount;
-
+var player_count = 0;
 var database;
-
 var form, player, game;
+var allplayers;
+var plr;
 
 
 function setup(){
@@ -18,4 +17,11 @@ function setup(){
 
 
 function draw(){
+  if(player_count === 4){
+    game.update(1);
+  }
+  if(gameState === 1) {
+    clear();
+    game.play();
+  }
 }
